@@ -1,19 +1,19 @@
 
 @font-face {
     font-family: 'seawave';
-    src: url('/fonts/seawave.otf');
+    src: url('../public/fonts/seawave.otf');
 }
 @font-face {
     font-family: "park";
-    src: url("/fonts/Parkford.otf");
+    src: url("../public/fonts/Parkford.otf");
 }
 @font-face {
     font-family: "pic";
-    src: url("/fonts/PicNic-Regular.woff");
+    src: url("../public/fonts/PicNic-Regular.woff");
 }
 @font-face {
     font-family: "sig";
-    src: url("/fonts/Sligoil-Micro.otf");
+    src: url("../public/fonts/Sligoil-Micro.otf");
 }
 body {
 	/* font-family:'Helvetica','Ariel','sans-serif'; */
@@ -59,7 +59,7 @@ body {
  font-family: 'sig';
 }
 .navbar-toggler-icon{
-	background-image: url('images/hamburger.svg');
+	background-image: url('../public/images/hamburger.svg');
 	opacity: 1;
 }
 button,
@@ -177,12 +177,12 @@ p{
 
 .carousel .carousel-control-prev-icon {
 
-	  background-image: url('/images/chevron-compact-left.svg');
+	  background-image: url('../public/images/chevron-compact-left.svg');
 	}
 	
 	.carousel .carousel-control-next-icon {
 	
-		background-image: url('/images/chevron-compact-right.svg');
+		background-image: url('../public/images/chevron-compact-right.svg');
 		
 	}
 	
