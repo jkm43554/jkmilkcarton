@@ -70,7 +70,9 @@ button:focus {
 	width:50%;
 }
 
-
+.email{
+	font-size:32pt;
+}
 p{
 	font-size:20px;
 	font-weight: 700;
@@ -80,6 +82,63 @@ p{
 .funfact{
 	font-size:12px;
 }
+
+.guy{
+	font-size:32pt;
+}
+.dealio{
+	font-size:22pt;
+}
+
+@media (max-width: 883px){
+	p{
+			font-size:16px;
+	}
+	.bio{
+	margin:auto;
+	width:80%;
+}
+	.funfact{
+		font-size:10px;
+	}
+	
+.skills{
+	margin:auto;
+	width:100%;
+}
+	.guy{
+	font-size:26pt;
+}
+}
+
+@media (max-width: 479px){
+	.email{
+		font-size:16pt;
+	}
+}
+
+
+@media (max-width: 465px){
+	p{
+			font-size:12px;
+	}
+
+	.bio{
+	margin:auto;
+	width:90%;
+}
+	.funfact{
+		font-size:9px;
+	}
+	.guy{
+	font-size:24pt;
+}
+	.dealio{
+	font-size:20pt;
+}
+	
+}
+
 
 .indent{
 	text-indent:1em;
@@ -114,16 +173,16 @@ h5{
 
 .hrtaste{
 	/* width:50%; */
-	margin:auto;
+	/* margin:auto; */
 }
 
 .hrfollow{
 	/* width:50%; */
-	margin:auto;
+	/* margin:auto; */
 }
 .hrcontact{
 	/* width:50%; */
-	margin:auto;
+	/* margin:auto; */
 	
 }
 
@@ -135,3 +194,22 @@ h5{
 	width:75%;
 }
 
+
+
+@media(max-width:371px){
+	.guy{
+		font-size:20pt;
+	}
+	.dealio{
+		font-size:18px;
+	}
+}
+
+@media(max-width:315px){
+	.guy{
+		font-size:18pt;
+	}
+	.dealio{
+		font-size:16px;
+	}
+}
