@@ -1,0 +1,137 @@
+
+@font-face {
+    font-family: 'seawave';
+    src: url('../fonts/seawave.otf');
+}
+@font-face {
+    font-family: "park";
+    src: url("../fonts/Parkford.otf");
+}
+@font-face {
+    font-family: "pic";
+    src: url("../fonts/PicNic-Regular.woff");
+}
+@font-face {
+    font-family: "sig";
+    src: url("../fonts/Sligoil-Micro.otf");
+}
+body {
+	font-family: 'sig';
+    width:100%;
+	height:100vh;
+}
+
+
+
+.navbar-brand {
+	font-weight: 100;
+ font-size: 16px;
+	text-decoration:none;
+	color:black;
+}
+.nav-item a{
+ color:black;
+ font-weight: 100;
+ font-size: 16px;
+ font-family: 'sig';
+}
+.navbar-toggler-icon{
+	background-image: url('../images/hamburger.svg');
+	opacity: 1;
+}
+button,
+button:active,
+button:focus {
+  outline: none;
+}
+.navbar-toggler,
+.navbar-toggler:active,
+.navbar-toggler:focus {
+  outline: none;
+}
+.navbar-toggler {
+    outline:none;
+	
+}
+
+.bio{
+	margin:auto;
+	width:60%;
+}
+
+.row1{
+	/* height:60vh; */
+	/* margin-top:2em; */
+}
+
+
+.skills{
+	margin:auto;
+	width:50%;
+}
+
+
+p{
+	font-size:20px;
+	font-weight: 700;
+	
+}
+
+.funfact{
+	font-size:12px;
+}
+
+.indent{
+	text-indent:1em;
+}
+
+
+
+
+
+
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+li{
+	font-size:14px;
+	line-height:3em;
+}
+
+h5{
+	font-weight:700;
+}
+
+
+
+.hr1{
+	width:60%;
+	margin:auto;
+}
+
+.hrtaste{
+	/* width:50%; */
+	margin:auto;
+}
+
+.hrfollow{
+	/* width:50%; */
+	margin:auto;
+}
+.hrcontact{
+	/* width:50%; */
+	margin:auto;
+	
+}
+
+.footer{
+	font-size:12px;
+}
+
+.extras{
+	width:75%;
+}
+
