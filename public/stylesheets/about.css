@@ -219,3 +219,11 @@ h5{
 	margin-top:50px; 
 	
 }
+
+.content{
+/* mix-blend-mode: exclusion !important;
+  will-change: mix-blend-mode; */
+	mix-blend-mode: difference !important;
+    filter: invert(1) !important;
+  	transform: none !important;
+}
