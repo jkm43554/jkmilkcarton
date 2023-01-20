@@ -223,10 +223,17 @@ h5{
 
 @media (max-width:430px){
 .centerphoto{
-	display:block;
+	/* display:block;
 	margin-left:auto;
-	margin-right:auto;
+	margin-right:auto; */
 }
+	/* .mephoto{
+	
+	margin-top:100px; 
+	
+	
+} */
+	
 }
 
 .content{
