@@ -213,3 +213,9 @@ h5{
 		font-size:16px;
 	}
 }
+.mephoto{
+	position:fixed;
+	z-index:-20;
+	margin-top:50px; 
+	
+}
