@@ -284,3 +284,8 @@ p{
 .clickHere{
 	color:black;
 }
+
+a.brand_guide{
+	text-decoration:underline;
+	color:black;
+}
