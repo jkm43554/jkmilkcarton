@@ -289,3 +289,6 @@ a.brand_guide{
 	text-decoration:underline;
 	color:black;
 }
+.openme{
+	text-decoration:dotted underline;
+}
