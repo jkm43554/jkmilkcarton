@@ -1,4 +1,5 @@
 
+
 @font-face {
     font-family: 'seawave';
     src: url('../fonts/seawave.otf');
@@ -22,6 +23,17 @@ body {
     width:100%;
 	height:100vh;
 	/* font-size:1em; */
+	 overflow: hidden;
+        /* margin: auto; */
+        background: white;
+        
+        text-align: center;
+}
+
+
+.maincontent{
+	overflow:scroll;
+	height:90vh;
 }
 .navvy{
 	/* display:flex; */
@@ -76,6 +88,12 @@ button:focus {
     outline:none;
 	
 }
+.topnav{
+	border-bottom:1px solid black;
+}
+.bottomnav{
+	border-top:1px solid black;
+}
 .melogo{
 	max-width:70%;
 	height:auto;
@@ -103,7 +121,7 @@ button:focus {
 	height:80vh;
 }
 .rowed2{
-	height:10vh;
+	/* height:10vh; */
 }
 
 @media (max-width:576px){
@@ -224,7 +242,7 @@ p{
 	  
 	  .filterDiv {
 		
-		display: none; /* Hidden by default */
+		display: block; /* Hidden by default */
 	  }
 	  .show {
 		display: block;
@@ -288,7 +306,4 @@ p{
 a.brand_guide{
 	text-decoration:underline;
 	color:black;
-}
-.openme{
-	text-decoration:dotted underline;
 }
