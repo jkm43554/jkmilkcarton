@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
+	<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+	<script src="https://unpkg.com/konva@8.4.3/konva.min.js"></script>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Jacob Martin</title>
@@ -9,81 +11,129 @@
 	<!-- <link rel="stylesheet" type="text/css" href="../public/stylesheets/home.css">  -->
 </head>
 <body>
+<div class='vignette' id="">
+	<!-- gradient layer -->
+</div>
+<div class='gradient' id="">
+	<!-- gradient layer -->
+</div>
 	
-<!-- 
-
-	nav
-	
- -->
-<div class='container-fluid'>
-	  <nav class="navbar topnav bg-white bg-sm-white fixed-top px-2">
+	<div class='container-fluid'>
+	  <nav class="navbar topnav bg-none bg-sm-white fixed-top px-2">
 		<div class="container-fluid px-2">
-		  <a class="navbar-brand" href="#">Jacob Martin</a>
-		  <a class="nav-link px-2 email" aria-current="page" href="#">jkm43554@gmail.com</a>
-		  <a class="nav-link" aria-current="page" href="#">ATL.</a>
-	
+		  <a class="nav-link blur" href="#">Jacob Martin</a>
+		  <a class="nav-link px-2 email invert blur" aria-current="page" href="#">jkm43554@gmail.com</a>
+		  <a class="nav-link blur" aria-current="page" href="#">ATL.</a>
+
 		</div>
 	  </nav>
 </div>
 	
-
-
-
-
-<!--  
-
-	TABS
-
--->
+	
 <div class="maincontent">
 	
 
 <div class="container-fluid ">
 	<div class="row rowed align-content-center">
-		<div class="col-12 col-sm-6 container d-none d-sm-flex align-content-center justify-content-end flex-wrap"><div class='row-md melogo'><img src="../public/images/me3.jpg" class='img-fluid' alt="Responsive image"></div></div>
+		<div class="col-12 col-sm-6 container d-none d-sm-flex align-content-center justify-content-end flex-wrap">
+			<div class='row-md melogo'>
+			<!-- <img src="./public/images/me3.jpg" class='img-fluid blur' alt="Responsive image"> -->
+				<div class="x6r blur">
+					Hello!
+				</div>
+			</div>
+		</div>
 		<div class="col-12 col-sm-6 container d-flex align-content-center flex-wrap">
 			<div class="row jah">
-				<div class="col"><img src="../public/images/look.jpg" class='img-fluid' alt="Responsive image"></div>
+				<div class="col"><img src="./public/images/look.jpg" class='img-fluid blur' id="cursorImage" ondragstart="return false;" alt="Responsive image"></div>
 			</div>
 		</div>
 	</div>
-
-	<div class="row rowed2  " id="myBtnContainer">
-		<a class="buton active col-6 text-end h2 openme"  href="javascript:;" id="toggle">DESIGN</a>
-		<a class="buton col-6 h2 openme text-start" id="toggle2" href="javascript:;"  data-backdrop="false">WEBDEV</a>
+	<div class="row rowed2 d-sm-inline d-none agl" id="myBtnContainer">
+		<a class="darker lessthicklines active col-6 text-end h2 openme x4 activea blur nospace p-1"  href="javascript:;" id="toggle">
+			Design
+		</a>
+		<a class="darker col-6 h2 openme  text-start x4 lessthicklines blur nospace p-1" id="toggle2" href="javascript:;"  data-backdrop="false">
+			WebDev
+		</a>
 		
 	</div>
+	<div class="row rowed2 d-sm-none d-inline agl" id="myBtnContainer">
+		<a class="darker lessthicklines active col-6 text-end h2 openme x2 activea blur nospace p-1"  href="javascript:;" id="toggle">
+			Design
+		</a>
+		<a class="darker col-6 h2 openme  text-start x2 lessthicklines blur nospace p-1 " id="toggle2" href="javascript:;"  data-backdrop="false">
+			WebDev
+		</a>
+		
+	</div>
+	<div class="row align-content-center">
+	 <ul class="d-flex justify-content-center blur ">
+		 <li class=""><a class="nodec mx-2 darker" href="views/about.html" target="" rel="noopener noreferrer">about</a></li>
+		 <li class=""><span class=' darker'>•</span></li>
+		<li class=""><a class="nodec mx-2 darker" href="https://www.pinterest.com/jkm43554/" target="_blank" rel="noopener noreferrer">pinterest</a></li>
+		 <li class=""><span class=' darker'>•</span></li>
+		<li class=""><a class="nodec mx-2 darker" href="https://github.com/jkm43554" target="_blank" rel="noopener noreferrer">github</a></li>
+		 <li class=""><span class=' darker'>•</span></li>
+		<li class=""><a class="nodec mx-2 darker" href="https://www.are.na/jacob-martin" target="_blank" rel="noopener noreferrer">are.na</a></li>
+		 <li class=""><span class='nav-link darker'>•</span></li>
+		<li class=""><a class="nodec mx-2 darker" href="https://www.linkedin.com/in/jkm43554/" target="_blank" rel="noopener noreferrer">linkedin</a></li>
+	 </ul> 
+	</div>
+	
 </div>
-<div id="design" style="display:block;" class='mt-0'>
-	<div class="container-fluid d-flex justify-content-between mb-3" ><div class="px-2 software">software: illustrator, photoshop, figma, after effects, 
-		premiere pro, procreate, indesign</div></div>
+</div>
+	
+	
 		
+		
+	
+<div class="container  mb-3 mb-lg-5 blur" >
+	
+	
+	<div id="design" style="display:block;" class='mt-0'>
+<!-- 
+ <div class="container-fluid gallerydrag border-primary">
 
-<div class="container-fluid  mb-3 mb-lg-5" >
+
+
+
+	<div class="card-transparent draggable border-0 text-start bg-none  " >
+		<img src="./public/images/gradient/all.jpg" class="card-img-top" alt="...">
+		  <p class="card-text p-0 m-0  ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	  </div>
+</div>
+  -->
+
+
+
+
+	<div class="container-fluid mb-3 mb-lg-5">
 	<div class="row titles mb-2 px-2 pb-2">
-		<div class="col-4">brand identity</div>
-		<div class="col-3">mockingbird talent agency</div>
-		<div class="col-5">brand identity design</div>
+	<div class="col-4 ">brand identity</div>
+	<div class="col-3">mockingbird talent agency</div>
+	<div class="col-5">brand identity design</div>
 	</div>
-	<div class="row px-2 d-lg-flex d-block ">
-		<div class="col-lg-7">
+	<div class="row px-2">
+		<div class="col">
 			<div id="carouselExampleControls1234" class="carousel slide"  data-interval="false">
-				<div class="carousel-inner h-100">
+				<div class="carousel-inner">
 				  <div class="carousel-item active">
-					<img src="../public/images/mta/title.webp" class=" img-fluid im" alt="...">
+					<img src="./public/images/mta/title.webp" class=" img-fluid im" alt="...">
 				  </div>
 					<div class="carousel-item">
-					<img src="../public/images/mta/logos.webp" class=" img-fluid im" alt="...">
+					<img src="./public/images/mta/logos.webp" class=" img-fluid im" alt="...">
 				  </div>
 				  <div class="carousel-item">
-					<img src="../public/images/mta/colors_type.webp" class="img-fluid" alt="...">
+					<img src="./public/images/mta/colors_type.webp" class="img-fluid" alt="...">
 				  </div>
 				  <div class="carousel-item">
-					<img src="../public/images/mta/insta_stationaries.webp" class="img-fluid im" alt="...">
+					<img src="./public/images/mta/insta_stationaries.webp" class="img-fluid im" alt="...">
 				  </div>
 				  <div class="carousel-item">
-					<img src="../public/images/mta/tswift_tsquare.webp" class="img-fluid im" alt="...">
+					<img src="./public/images/mta/tswift_tsquare.webp" class="img-fluid im" alt="...">
 				  </div>
+					
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1234" data-bs-slide="prev">
 				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -95,8 +145,18 @@
 				</button>
 			  </div>
 		</div>
-		<div class="col-lg-5 mt-3 mt-lg-0 "> 
-			<div class="text_Border mt-2 mt-lg-0 justify-content-start">
+	</div>
+	
+	
+	<div class='row'>
+		<p>
+  			<a class="darkref" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-		      controls="collapseExample1">
+            details...
+			</a>
+		</p>
+		<div class="collapse" id="collapseExample1">
+  			<div class="container">
+    		<div class="text_Border mt-2 mt-lg-0 justify-content-start">
 			<p class="pt-lg-0 pt-2 mt-0">Mockingbird Talent Agency is an agency built by a creative for creatives. The music industry is filled with greed and misdeeds. The founder of MTA, Atticus Roness, knows the ins and outs of the industry. He knows what does and what doesn’t work, he knows how to cater to creatives because he is one, and he knows where booking agents fall short because he’s spent years working with them. MTA seeks to unveil an innovative brand of transparency, creativity, and trust. </p>
 				
 			<p class="">The talent agency industry overall has a very professional and industrial look in it’s identity. I approached MTA’s identity to keep this professional feel but also bring out the creative and innovative side of MTA. Some ways this was achieved was through finding a professional type with creative alternate character and glyph options available, choosing a secondary color that would represent the creative aspects, and creating a brandmark which is rare to come by in the talent agent industry.</p>
@@ -104,39 +164,42 @@
 			<p>To learn of more ways I achieved this identity, take a look at the <a href='../public/pdf/brand_strategy_guide.pdf' class='brand_guide' target="_blank">brand strategy guide</a>.</p>
 			
 				
-		</div>
+			</div>
+  			</div>
 		</div>
 	</div>
-</div>	
+	
+	</div>	
+	
+
 	
 	
 	
 	
 	
 	
-	
-	
-<div class="container-fluid  mb-3 mb-lg-5" >
+
+<div class="container-fluid mb-3 mb-lg-5" >
 	<div class="row titles mb-2 px-2 pb-2">
 		<div class="col-4">album rollout</div>
 		<div class="col-3">the corduroy blue</div>
 		<div class="col-5">graphic design / illustration</div>
 	</div>
 	<div class="row px-2 d-lg-flex d-block ">
-		<div class="col-lg-7">
+		<div class="col">
 			<div id="carouselExampleControls" class="carousel slide"  data-interval="false">
 				<div class="carousel-inner h-100">
 				  <div class="carousel-item active">
-					<img src="../public/images/albumrollout/dreams_and_nightmares_poster_sticker.jpg" class=" img-fluid im" alt="...">
+					<img src="./public/images/albumrollout/dreams_and_nightmares_poster_sticker.jpg" class=" img-fluid im" alt="...">
 				  </div>
 				  <div class="carousel-item">
-					<img src="../public/images/albumrollout/hippie_inn_poster.jpg" class="img-fluid" alt="...">
+					<img src="./public/images/albumrollout/hippie_inn_poster.jpg" class="img-fluid" alt="...">
 				  </div>
 				  <div class="carousel-item">
-					<img src="../public/images/albumrollout/tee_shirt_designs.jpg" class="img-fluid im" alt="...">
+					<img src="./public/images/albumrollout/tee_shirt_designs.jpg" class="img-fluid im" alt="...">
 				  </div>
 				  <div class="carousel-item">
-					<img src="../public/images/albumrollout/the_corduroy_blue_spelling_bee_sticker_virginity_sticker.jpg" class="img-fluid im" alt="...">
+					<img src="./public/images/albumrollout/the_corduroy_blue_spelling_bee_sticker_virginity_sticker.jpg" class="img-fluid im" alt="...">
 				  </div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -149,8 +212,17 @@
 				</button>
 			  </div>
 		</div>
-		<div class="col-lg-5 mt-3 mt-lg-0 "> 
-			<div class="text_Border mt-2 mt-lg-0 justify-content-start">
+	</div>
+	
+	<div class='row'>
+		<p>
+  			<a class="darkref" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-		      controls="collapseExample2">
+            details...
+			</a>
+		</p>
+		<div class="collapse" id="collapseExample2">
+  			<div class="container">
+				<div class="text_Border mt-2 mt-lg-0 justify-content-start">
 			<p class="pt-lg-0 pt-2 mt-0"><span>The Corduroy Blue</span> (TCB) is a power pop band based in Atl, Ga. TCB aims to blend the charisma of 60s/70s rock-pop with the charm of 90s Brit-pop; all within a modern context. </p>
 				
 			<p class="">TCB needed a full rollout of media and merchandise to promote their debut self-titled album and attract an audience to their shows. TCB has gained a cult following among the underground Atlanta rock scene for the atmosphere created at their shows, and the connections they make with their fans and other local bands. So it’s important that the designs appeal to new audiences while showing love to current fans and friends. My role was to design tour/show posters, t-shirts, stickers, and instagram posts for the rollout.
@@ -169,10 +241,18 @@
 			</p>
 				
 		</div>
+			</div>
 		</div>
 	</div>
+	
 </div>
+			
+		
+	
+		
 
+		
+	<div class='col-lg-6 col-lg-12'>
 <div class="container-fluid  mb-3 mb-lg-5 filterDiv design" >
 	<div class="row titles mb-2 px-2 ">
 		<div class="col-4">social media graphics</div>
@@ -180,17 +260,17 @@
 		<div class="col-5">graphic design / illustration / lettering</div>
 	</div>
 	<div class="row px-2 d-lg-flex d-block">
-		<div class="col-lg-7">
+		<div class="col">
 			<div id="carouselExampleControls4" class="carousel slide " data-interval="false">
 				<div class="carousel-inner h-100">
 				  <div class="carousel-item active">
-					<img src="../public/images/daily_grind/dg_moodboard_and_designs.jpg" class=" img-fluid im" alt="...">
+					<img src="./public/images/daily_grind/dg_moodboard_and_designs.jpg" class=" img-fluid im" alt="...">
 				  </div>
 				  <div class="carousel-item">
-					<img src="../public/images/daily_grind/dg_holiday.jpg" class="img-fluid im" alt="...">
+					<img src="./public/images/daily_grind/dg_holiday.jpg" class="img-fluid im" alt="...">
 				  </div>
 				  <div class="carousel-item">
-					<img src="../public/images/daily_grind/dg_easter.jpg" class="img-fluid im" alt="...">
+					<img src="./public/images/daily_grind/dg_easter.jpg" class="img-fluid im" alt="...">
 				  </div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
@@ -203,8 +283,18 @@
 				</button>
 			  </div>
 		</div>
-		<div class="col-lg-5"> 
-			<div class="text_Border mt-2 mt-lg-0 justify-content-start">
+		
+	</div>
+	
+	<div class='row'>
+		<p>
+  			<a class="darkref" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-		      controls="collapseExample3">
+            details...
+			</a>
+		</p>
+		<div class="collapse" id="collapseExample3">
+  			<div class="container">
+				<div class="text_Border mt-2 mt-lg-0 justify-content-start">
 			<p class="pt-lg-0 pt-2">The Daily Grind (DG) is a local and family owned coffeeshop in Marietta, Ga.
 				DG needed a brand identity and graphics to keep their loyal customers updated. Before this update DG would only post pictures with info in the caption that most followers would ignore. They also didn’t have consistency and cohesion in their identity to represent the brand. I worked with the social media manager to establish a color palette, typographic identity, and brand identity. </p>
 				<p>
@@ -214,10 +304,17 @@
 					The designs resulted in less emails and phone calls to the shop for simple information such as updated store hours, closures, specials, etc.. We were even able to use the graphics to help spread word on finding a thief who stole a regular customer’s truck and trailer the regular uses for his landscaping company. Less time talking to customers on the phone and email resulted in more time to prep and get orders out quicker.
 				</p>
 			</div>
+			</div>
 		</div>
 	</div>
+	
 </div>
+	</div>
+		
 
+		
+	<div class='col-lg-6 col-lg-12'>	
+		
 <div class="container-fluid  mb-3 mb-lg-5 filterDiv design" >
 	<div class="row titles mb-2 px-2">
 		<div class="col-4">'waterfall'- single promo videos</div>
@@ -225,22 +322,22 @@
 		<div class="col-5">motion graphics</div>
 	</div>
 	<div class="row px-2 mb-4 d-lg-flex d-block">
-		<div class="col-lg-7">
+		<div class="col">
 			<div id="carouselExampleControls2" class="carousel slide vids " data-interval="false">
 				<div class="carousel-inner h-auto">
 				  <div class="carousel-item active text-center pt-2">
 						<video class="img-fluid w-75 rounded" autoplay loop muted >
-							<source src="../public/images/waterfall/big_shanty_waterfall_emergency.mp4" type="video/mp4">
+							<source src="./public/images/waterfall/big_shanty_waterfall_emergency.mp4" type="video/mp4">
 						  </video>
 				  </div>
 				  <div class="carousel-item text-center pt-2">
 					<video class="img-fluid w-75 rounded" autoplay loop muted >
-						<source src="../public/images/waterfall/OUT_NOW_BIG_SHANTY_WATERFALL.mp4" type="video/mp4">
+						<source src="./public/images/waterfall/OUT_NOW_BIG_SHANTY_WATERFALL.mp4" type="video/mp4">
 					  </video>
 			  </div>
 			  <div class="carousel-item text-center pt-2">
 				<video class="img-fluid w-75 rounded" autoplay loop muted >
-					<source src="../public/images/waterfall/TONIGHT_BIG_SHANTY_WATERFALL.mp4" type="video/mp4">
+					<source src="./public/images/waterfall/TONIGHT_BIG_SHANTY_WATERFALL.mp4" type="video/mp4">
 				  </video>
 		  </div>
 				</div>
@@ -254,8 +351,18 @@
 				</button>
 			  </div>
 		</div>
-		<div class="col-lg-5"> 
-			<div class="text_Border mt-2 mt-lg-0 justify-content-start">
+	
+	</div>
+	
+	<div class='row'>
+		<p>
+  			<a class="darkref" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-		      controls="collapseExample4">
+            details...
+			</a>
+		</p>
+		<div class="collapse" id="collapseExample4">
+  			<div class="container">
+				<div class="text_Border mt-2 mt-lg-0 justify-content-start">
 			<p class="pt-lg-0 pt-2">Big Shanty is a bedroom-pop artist based in Atlanta, GA. He seeks to pursue and capture new and unfamiliar combinations of sounds. The ambiguity in this combination creates a mysterious identity that tastefully combines elements of the unknown with elements of what’s familiar. Big Shanty has a small following and needed to grow the reach of his social media presence to drive people to listen to his single “Waterfall”. </p>
 				
 			<p>
@@ -268,10 +375,18 @@
 			Unfortunately, the single was never placed on a first-party playlist, but it did end up being the most pre-saved single of Big Shanty’s audience and the most streamed song of his up to that point. The song was also placed on many of his followers playlists which sets him up for more successful releases in the future as Spotify and Apple Music's algorithm favors playlist placements.
 		</p>
 			</div>
+			</div>
 		</div>
 	</div>
 </div>
+	</div>
 	
+	
+
+	
+
+		
+	<div class='col-lg-6 col-lg-12'>	
 <div class="container-fluid  mb-3 mb-lg-5 filterDiv design" >
 	<div class="row titles mb-2 px-2">
 		<div class="col-4">gradient music festival</div>
@@ -279,29 +394,29 @@
 		<div class="col-5">graphic design</div>
 	</div>
 	<div class="row px-2 d-lg-flex d-block">
-		<div class="col-lg-7">
+		<div class="col">
 			<div id="carouselExampleControls3" class="carousel slide "  data-interval="false">
 				<div class="carousel-inner h-100">
 				  <div class="carousel-item active">
-					<img src="../public/images/gradient/all.jpg" class=" img-fluid im" alt="...">
+					<img src="./public/images/gradient/all.jpg" class=" img-fluid im" alt="...">
 				  </div>
 				  <div class="carousel-item">
-					<img src="../public/images/gradient/posters.jpg" class="img-fluid im" alt="...">
+					<img src="./public/images/gradient/posters.jpg" class="img-fluid im" alt="...">
 				  </div>
 				  <div class="carousel-item">
-					<img src="../public/images/gradient/passes.jpg" class="img-fluid im" alt="...">
+					<img src="./public/images/gradient/passes.jpg" class="img-fluid im" alt="...">
 				  </div>
 				  <div class="carousel-item">
-					<img src="../public/images/gradient/booklet_all.jpg" class="img-fluid im" alt="...">
+					<img src="./public/images/gradient/booklet_all.jpg" class="img-fluid im" alt="...">
 				  </div>
 				  <div class="carousel-item">
-					<img src="../public/images/gradient/book_cover_back.jpg" class="img-fluid im" alt="...">
+					<img src="./public/images/gradient/book_cover_back.jpg" class="img-fluid im" alt="...">
 				  </div>
 				  <div class="carousel-item">
-					<img src="../public/images/gradient/book_1_2.jpg" class="img-fluid im" alt="...">
+					<img src="./public/images/gradient/book_1_2.jpg" class="img-fluid im" alt="...">
 				  </div>
 				  <div class="carousel-item">
-					<img src="../public/images/gradient/book_3_4.jpg" class="img-fluid im" alt="...">
+					<img src="./public/images/gradient/book_3_4.jpg" class="img-fluid im" alt="...">
 				  </div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
@@ -314,17 +429,32 @@
 				</button>
 			  </div>
 		</div>
-		<div class="col-lg-5"> 
-			<div class="text_Border mt-2 mt-lg-0 justify-content-start">
+		
+	</div>
+	<div class='row'>
+		<p>
+  			<a class="darkref" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-		      controls="collapseExample5">
+            details...
+			</a>
+		</p>
+		<div class="collapse" id="collapseExample5">
+  			<div class="container">
+				<div class="text_Border mt-2 mt-lg-0 justify-content-start">
 				<p class="pt-lg-0 pt-2">Gradient is the result of a final exam school project from my time at Maryville University. Students were tasked to utilize Photoshop, Illustrator, and Indesign to create a brand identity, poster, booklet, and tickets for a fictional concert.</p>
 				<p>I decided to create a music festival called “Gradient”, drawing inspiration from a playlist I made earlier that semester. The playlist was a curation of artists I noticed made songs tackling tough and dark subjects, but always with a sense of hope and moving forward. The contrast between the light and dark within the same sonic and thematic setting inspired the name “Gradient”. </p>
 				<p>With the title “Gradient” it was pretty obvious which direction to take the design. Because of the “dark to light” theme I wanted the gradient used in the design to go from black to white with, at most, a slight hue added to both values, but extreme contrast must be presented. Most of the artists on the playlist (and therefore chosen for the project) have a somewhat minimalist sound so I decided to use a monochromatic scheme. I chose to stay within the blue hue to match the bluesy-ness of the artists represented. For the typography I went with one classic serif with different weights to compliment and really drive the minimalist theme. I feel the minimalism really amplifies the contrast and helps to push the “light surrounded by dark” feeling.</p>
 				<p>I took some risks with what the professor asked for to much of her approval. Instead of tickets I designed passes. For the booklet we needed to provide photos of each artist. I decided to cut out the headliners to create contrast. For the supporting acts I kept them in the photo to show they weren’t headliners. The project received high praise and a great response from the professor as well as the class.</p>
 			</div>
+			</div>
 		</div>
 	</div>
 </div>
+	</div>
+		
+		
 	
+		
+	<div class='col-lg-6 col-lg-12'>
 <div class="container-fluid  mb-3 mb-lg-5 filterDiv design" >
 	<div class="row titles mb-2 px-2">
 		<div class="col-4">tour poster</div>
@@ -332,20 +462,20 @@
 		<div class="col-5">graphic design</div>
 	</div>
 	<div class="row px-2 d-lg-flex d-block">
-		<div class="col-lg-7">
+		<div class="col">
 			<div id="carouselExampleControls7" class="carousel slide "  data-interval="false">
 				<div class="carousel-inner h-100">
 				  <div class="carousel-item active">
-					<img src="../public/images/tcb_feb_tour/tcb_feb_tour_poster.jpg" class=" img-fluid im" alt="...">
+					<img src="./public/images/tcb_feb_tour/tcb_feb_tour_poster.jpg" class=" img-fluid im" alt="...">
 				  </div>
 				  <div class="carousel-item ">
-					<img src="../public/images/tcb_feb_tour/tcb_feb_tour.jpg" class=" img-fluid im" alt="...">
+					<img src="./public/images/tcb_feb_tour/tcb_feb_tour.jpg" class=" img-fluid im" alt="...">
 				  </div>
 				 <div class="carousel-item ">
-					<img src="../public/images/tcb_feb_tour/tcb_feb_tour_social_media.jpg" class=" img-fluid im" alt="...">
+					<img src="./public/images/tcb_feb_tour/tcb_feb_tour_social_media.jpg" class=" img-fluid im" alt="...">
 				  </div>
 				<div class="carousel-item ">
-					<img src="../public/images/tcb_feb_tour/tcb_new_years_eve_eve.jpg" class=" img-fluid im" alt="...">
+					<img src="./public/images/tcb_feb_tour/tcb_new_years_eve_eve.jpg" class=" img-fluid im" alt="...">
 				  </div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls7" data-bs-slide="prev">
@@ -358,8 +488,18 @@
 				</button>
 			  </div>
 		</div>
-		<div class="col-lg-5"> 
-			<div class="text_Border mt-2 mt-lg-0 justify-content-start">
+		
+	</div>
+	
+	<div class='row'>
+		<p>
+  			<a class="darkref" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-		      controls="collapseExample6">
+            details...
+			</a>
+		</p>
+		<div class="collapse" id="collapseExample6">
+  			<div class="container">
+				<div class="text_Border mt-2 mt-lg-0 justify-content-start">
 				<p class="pt-lg-0 pt-2"> The Corduroy Blue (TCB) is a power pop band based in Atl, Ga. TCB aims to blend the charisma of 60s/70s rock-pop with the charm of 90s Brit-pop; all within a modern context. TCB needed a poster for their early winter tour. In addition the poster design would be used for social media as well. </p> 
 				
 				<p>My solution, once again, was to capitalize on the atmosphere created at their shows. TCB has contrasting energy and themes that really work well together. On one hand they portray a sense of flashiness and glamour somewhat reminiscent of disco and pop. On the other hand they have an aggressive recklessness and edge found in punk and underground rock. </p> 
@@ -369,10 +509,16 @@
 				<p>For the edginess and recklessness I used placement inspired by the cut and paste style of placement seen on concert posters through 60s and 70s UK and other underground proto punk cities. </p>
 
 			</div>
+			</div>
 		</div>
 	</div>
 </div>
+	</div>
+
 	
+	
+		
+	<div class='col-lg-6 col-lg-12'>
 <div class="container-fluid  mb-3 mb-lg-5 filterDiv design" >
 	<div class="row titles mb-2 px-2">
 		<div class="col-4">event media kit</div>
@@ -380,14 +526,14 @@
 		<div class="col-5">graphic design</div>
 	</div>
 	<div class="row px-2 d-lg-flex d-block">
-		<div class="col-lg-7">
+		<div class="col">
 			<div id="carouselExampleControls8" class="carousel slide "  data-interval="false">
 				<div class="carousel-inner h-100">
 				  <div class="carousel-item active">
-					<img src="../public/images/r2rxmas2022/r2r_christmas_poster.jpg" class=" img-fluid im" alt="...">
+					<img src="./public/images/r2rxmas2022/r2r_christmas_poster.jpg" class=" img-fluid im" alt="...">
 				  </div>
 				  <div class="carousel-item ">
-					<img src="../public/images/r2rxmas2022/r2r_christmas_all_graphics.jpg" class=" img-fluid im" alt="...">
+					<img src="./public/images/r2rxmas2022/r2r_christmas_all_graphics.jpg" class=" img-fluid im" alt="...">
 				  </div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls8" data-bs-slide="prev">
@@ -400,52 +546,36 @@
 				</button>
 			  </div>
 		</div>
-		<div class="col-lg-5"> 
-			<div class="text_Border mt-2 mt-lg-0 justify-content-start">
+		
+	</div>
+	
+	<div class='row'>
+		<p>
+  			<a class="darkref" data-bs-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-		      controls="collapseExample7">
+            details...
+			</a>
+		</p>
+		<div class="collapse" id="collapseExample7">
+  			<div class="container">
+				<div class="text_Border mt-2 mt-lg-0 justify-content-start">
 				<p class="pt-lg-0 pt-2">Real 2 Reel(R2R) Studios is a music studio based in Atlanta, Ga. Owned by the founders son, Will Turpin(Collective Soul), they’ve hosted bands such as Kansas, Lynyrd Skynyrd, and Collective Soul. </p>
 				
 				<p>R2R needed a poster and social media graphics to promote their Christmas concert. The concert was a showcase of the artists that recorded there throughout the year. Since their lineup consisted of gritty rock artists, they wanted to be cautious that the Christmas theme didn't give off a “cute” feeling. They wanted it to be “Christmassy” but stay “edgy and organic”.
 </p>
 				<p>Capitalizing on green being both an organic earthy color as well as a Christmassy color, I used it to start off the color palette. I illustrated a guitar and Christmas tree with some rough and simple textures overlayed. I drew inspiration from vintage style Christmas cards for the overall aesthetic. I used a stylized sans serif font paired with a vintage looking script font. To avoid a cute look I stayed away from cute illustrations and the use of a lot of red. R2R loved the poster and the showcase ended up being a sold out show.</p>
 			</div>
-		</div>
-	</div>
-</div>
-
-	<div class="container-fluid  mb-3 mb-lg-5 filterDiv design" >
-	<div class="row titles mb-2 px-2">
-		<div class="col-4">wynwood mural</div>
-		<div class="col-3">kennesaw state university</div>
-		<div class="col-5">graphic design</div>
-	</div>
-	<div class="row px-2 d-lg-flex d-block">
-		<div class="col-lg-7">
-			<div id="carouselExampleControls8" class="carousel slide "  data-interval="false">
-				<div class="carousel-inner h-100">
-				  <div class="carousel-item active">
-					<img src="../public/images/miami/winwood_mural_miami.webp" class=" img-fluid im" alt="...">
-				  </div>
-				</div>
-				
-			  </div>
-		</div>
-		<div class="col-lg-5"> 
-			<div class="text_Border mt-2 mt-lg-0 justify-content-start">
-				<p class="pt-lg-0 pt-2">This Wynwood mural design was a final exam project for Kennesaw State University. Students were tasked with a fake competition where we were being comissioned by the city of Miami to design a mural for a wall in the Wynwood neighborhood of Miami. The project must utilize all the principles and elements of 2D design and color theory learned in each module of the class.</p>
-				
-				<p>In the class we had a project for each module that demonstrated what we learned in that module. My solution was to take each of my designs from those seven projects and turn them into the word “Miami”, thus showcasing all the principles and elements we learned along the way.</p>
-				
-				<p>The projects are, as followed: 1. Unity 2. Rhythm 3. Balance and Negative/Positive Space 4. Value and Visual Hierarchy 5. Hue, Saturation, and Value 6. Bezold Effect 7. Color Schemes.</p>
-				
-				<p>The project was very well received as it was put up and displayed in KSU’s art school. My professor asked to keep the poster as an example to show to classes of later semesters. He also informed me in front of the class that the staff took a vote of all the designs from the project from all the classes, and my project was chosen as the one submission that would be on the Wynwood Walls if the compeition was real.
-</p>
 			</div>
 		</div>
 	</div>
 </div>
+
+		</div>
+		
 	
 
 </div>
+
+
 <div id="webdev" style="display:none;">
 	<div class="container-fluid d-flex justify-content-between mb-3" >
 		<div class="px-2 software">skills: javascript, express, node, angular, html, css, sql, mongoDB, bootstrap, git, terminal, java, python
@@ -461,7 +591,7 @@
 			<div class="col-5">web dev/design</div>
 		</div>
 		<div class="row px-2 d-lg-flex d-block ">
-			<div class="col-lg-7">
+			<div class="col">
 				<div id="carouselExampleControls5" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-inner h-100">
 						<div class="carousel-item active">
@@ -487,7 +617,17 @@
 					</button>
 				</div>
 			</div>
-			<div class="col-lg-5 mt-3 mt-lg-0 "> 
+			
+		</div>
+		
+		<div class='row'>
+		<p>
+  			<a class="darkref" data-bs-toggle="collapse" href="#collapseExample9" role="button" aria-expanded="false" aria-		      controls="collapseExample9">
+            details...
+			</a>
+		</p>
+		<div class="collapse" id="collapseExample9">
+  			<div class="container">
 				<div class="text_Border mt-2 mt-lg-0 justify-content-start">
 					<p class="pt-lg-0 pt-2 mt-0">
 						Interactive front end development for a google clone landing page. 
@@ -498,6 +638,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 
 
 		<div class="row titles mb-2 px-2 pb-2">
@@ -506,7 +647,7 @@
 			<div class="col-5">web dev/design</div>
 		</div>
 		<div class="row px-2 d-lg-flex d-block ">
-			<div class="col-lg-7">
+			<div class="col">
 				<div id="carouselExampleControls6" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-inner h-100">
 						<div class="carousel-item active">
@@ -538,7 +679,16 @@
 					</button>
 				</div>
 			</div>
-			<div class="col-lg-5 mt-3 mt-lg-0 "> 
+			
+		</div>
+		<div class='row'>
+		<p>
+  			<a class="darkref" data-bs-toggle="collapse" href="#collapseExample10" role="button" aria-expanded="false" aria-		      controls="collapseExample10">
+            details...
+			</a>
+		</p>
+		<div class="collapse" id="collapseExample10">
+  			<div class="container">
 				<div class="text_Border mt-2 mt-lg-0 justify-content-start">
 					<p class="pt-lg-0 pt-2 mt-0">Daily Grind is a family owned coffee shop with an identity based strongly around community.
 					This is a simple, responsive website using css, bootstrap, and javascript. 
@@ -547,115 +697,175 @@
 				</div>
 			</div>
 		</div>
+	
+	</div>
 
 
 	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<!-- <div class="container-fluid  mb-3 mb-lg-5" >
-		
-		
-		
-		<div class="row titles mb-2 px-2 pb-2">
-			<div class="col-4">daily grind website</div>
-			<div class="col-3">daily grind marietta</div>
-			<div class="col-5">web design/development</div>
-		</div>
-		<div class="row px-2 d-lg-flex d-block ">
-			<div class="col-lg-7">
-				<div id="carouselExampleControls5" class="carousel slide" data-bs-ride="carousel">
-					<div class="carousel-inner h-100">
-					  <div class="carousel-item active">
-						<img src="../public/images/dgwebdev/dgmaclanding.jpg" class=" img-fluid im" alt="...">
-					  </div>
-					  <div class="carousel-item">
-						<img src="../public/images/dgwebdev/dgmacmenu.jpg" class="img-fluid" alt="...">
-					  </div>
-					  <div class="carousel-item">
-						<img src="../public/images/dgwebdev/dgmacmid.jpg" class="img-fluid im" alt="...">
-					  </div>
-					  <div class="carousel-item">
-						<img src="../public/images/dgwebdev/dgmobilelanding.jpg" class="img-fluid im" alt="...">
-					  </div>
-					  <div class="carousel-item">
-						<img src="../public/images/dgwebdev/dgmidmenu.jpg" class="img-fluid im" alt="...">
-					  </div>
-					  <div class="carousel-item">
-						<img src="../public/images/dgwebdev/dgmobilemenu.jpg" class="img-fluid im" alt="...">
-					  </div>
-					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="prev">
-					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					  <span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="next">
-					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-					  <span class="visually-hidden">Next</span>
-					</button>
-				  </div>
-			</div>
-			<div class="col-lg-5 mt-3 mt-lg-0 "> 
-				<div class="text_Border mt-2 mt-lg-0 justify-content-start">
-				<p class="pt-lg-0 pt-2 mt-0">Daily Grind is a family owned coffee shop with an identity based strongly around community.
-					This is a simple, responsive website using css, bootstrap, and javascript. 
-				</p>
-				<p>visit @ <a href="https://dailygrindmarietta.netlify.app/" class="clickHere" target="_blank">here</a></p>
-				
-			</div>
-			</div>
-		</div>
-	</div> -->
 </div>
-	
-		</div>
-	
-<nav class="navbar navbar-expand bg-none bottomnav">
-	<div class="container-fluid ">
-		<div class="navbar-collapse ">
-	 <ul class="navbar-nav d-flex justify-content-between">
-		 <li class="nav-item"><a class="nav-link" href="views/about.html" target="" rel="noopener noreferrer">Info</a></li>
-		<li class="nav-item"><a class="nav-link" href="https://www.pinterest.com/jkm43554/" target="_blank" rel="noopener noreferrer">pinterest</a></li>
-		<li class="nav-item"><a class="nav-link" href="https://github.com/jkm43554" target="_blank" rel="noopener noreferrer">github</a></li>
-		<li class="nav-item"><a class="nav-link" href="https://www.are.na/jacob-martin" target="_blank" rel="noopener noreferrer">are.na</a></li>
-		<li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/jkm43554/" target="_blank" rel="noopener noreferrer">linkedin</a></li>
-	 </ul> 
-	</div>
-	</div>
-  </nav>
-  
-<!-- 
 
-Modals
 
--->
-  <div class="modal " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-		</div>
-		<div class="modal-body container-fluid h-100 d-flex text-center justify-content-center">
-			<div class="row align-content-center h6">content coming soon...</div>
-		</div>
-	  </div>
-	</div>
-  </div>
 
- 
+
+
+</div>
+
 <!-- 
 
 script
 
 -->
+	<script>
+		const position = { x: 0, y: 0 }
+
+interact('.draggable').draggable({
+  listeners: {
+    start (event) {
+      console.log(event.type, event.target)
+    },
+    move (event) {
+      position.x += event.dx
+      position.y += event.dy
+
+      event.target.style.transform =
+        `translate(${position.x}px, ${position.y}px)`
+    },
+  }
+})
+	</script>
+	<script>
+      var width = window.innerWidth;
+      var height = window.innerHeight;
+
+      var stage = new Konva.Stage({
+        container: 'container',
+        width: width,
+        height: height,
+      });
+
+      var layer = new Konva.Layer();
+
+      stage.add(layer);
+
+      var tempLayer = new Konva.Layer();
+      stage.add(tempLayer);
+
+      var text = new Konva.Text({
+        fill: 'black',
+      });
+      layer.add(text);
+
+      var star;
+      for (var i = 0; i < 10; i++) {
+        star = new Konva.Star({
+          x: stage.width() * Math.random(),
+          y: stage.height() * Math.random(),
+          fill: 'blue',
+          numPoints: 10,
+          innerRadius: 20,
+          outerRadius: 25,
+          draggable: true,
+          name: 'star ' + i,
+          shadowOffsetX: 5,
+          shadowOffsetY: 5,
+        });
+        layer.add(star);
+      }
+
+      stage.on('dragstart', function (e) {
+        e.target.moveTo(tempLayer);
+        layer.draw();
+        text.text('Moving ' + e.target.name());
+      });
+
+      var previousShape;
+      stage.on('dragmove', function (evt) {
+        var pos = stage.getPointerPosition();
+        var shape = layer.getIntersection(pos);
+        if (previousShape && shape) {
+          if (previousShape !== shape) {
+            // leave from old targer
+            previousShape.fire(
+              'dragleave',
+              {
+                evt: evt.evt,
+              },
+              true
+            );
+
+            // enter new targer
+            shape.fire(
+              'dragenter',
+              {
+                evt: evt.evt,
+              },
+              true
+            );
+            previousShape = shape;
+          } else {
+            previousShape.fire(
+              'dragover',
+              {
+                evt: evt.evt,
+              },
+              true
+            );
+          }
+        } else if (!previousShape && shape) {
+          previousShape = shape;
+          shape.fire(
+            'dragenter',
+            {
+              evt: evt.evt,
+            },
+            true
+          );
+        } else if (previousShape && !shape) {
+          previousShape.fire(
+            'dragleave',
+            {
+              evt: evt.evt,
+            },
+            true
+          );
+          previousShape = undefined;
+        }
+      });
+      stage.on('dragend', function (e) {
+        var pos = stage.getPointerPosition();
+        var shape = layer.getIntersection(pos);
+        if (shape) {
+          previousShape.fire(
+            'drop',
+            {
+              evt: e.evt,
+            },
+            true
+          );
+        }
+        previousShape = undefined;
+        e.target.moveTo(layer);
+      });
+
+      stage.on('dragenter', function (e) {
+        e.target.fill('green');
+        text.text('dragenter ' + e.target.name());
+      });
+
+      stage.on('dragleave', function (e) {
+        e.target.fill('blue');
+        text.text('dragleave ' + e.target.name());
+      });
+
+      stage.on('dragover', function (e) {
+        text.text('dragover ' + e.target.name());
+      });
+
+      stage.on('drop', function (e) {
+        e.target.fill('red');
+        text.text('drop ' + e.target.name());
+      });
+    </script>
 <script>
 
 if (first_click) {
@@ -724,6 +934,8 @@ btn.onclick = function () {
     targetDiv.style.display = "none";
   } else {
     targetDiv.style.display = "block";
+	btn.style.display='grey';
+	
   }
 };
 
@@ -738,6 +950,61 @@ btn2.onclick = function () {
     targetDiv2.style.display = "block";
   }
 };
+	
+	
+	let gMouseDownX = 0;
+let gMouseDownY = 0;
+let gMouseDownOffsetX = 0;
+let gMouseDownOffsetY = 0;
+
+function addListeners() {
+    document.getElementById('cursorImage').addEventListener('mousedown', mouseDown, false);
+    window.addEventListener('mouseup', mouseUp, false);
+}
+
+function mouseUp() {
+    window.removeEventListener('mousemove', divMove, true);
+}
+
+function mouseDown(e) {
+    gMouseDownX = e.clientX;
+    gMouseDownY = e.clientY;
+
+    var div = document.getElementById('cursorImage');
+
+    //The following block gets the X offset (the difference between where it starts and where it was clicked)
+    let leftPart = "";
+    if(!div.style.left)
+        leftPart+="0px";    //In case this was not defined as 0px explicitly.
+    else
+        leftPart = div.style.left;
+    let leftPos = leftPart.indexOf("px");
+    let leftNumString = leftPart.slice(0, leftPos); // Get the X value of the object.
+    gMouseDownOffsetX = gMouseDownX - parseInt(leftNumString,10);
+
+    //The following block gets the Y offset (the difference between where it starts and where it was clicked)
+    let topPart = "";
+    if(!div.style.top)
+        topPart+="0px";     //In case this was not defined as 0px explicitly.
+    else
+        topPart = div.style.top;
+    let topPos = topPart.indexOf("px");
+    let topNumString = topPart.slice(0, topPos);    // Get the Y value of the object.
+    gMouseDownOffsetY = gMouseDownY - parseInt(topNumString,10);
+
+    window.addEventListener('mousemove', divMove, true);
+}
+
+function divMove(e){
+    var div = document.getElementById('cursorImage');
+    div.style.position = 'absolute';
+    let topAmount = e.clientY - gMouseDownOffsetY;
+    div.style.top = topAmount + 'px';
+    let leftAmount = e.clientX - gMouseDownOffsetX;
+    div.style.left = leftAmount + 'px';
+}
+
+addListeners();
 
 
 	</script>

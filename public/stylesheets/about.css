@@ -15,8 +15,69 @@
     font-family: "sig";
     src: url("../fonts/Sligoil-Micro.otf");
 }
+
+
+
+@font-face {
+    font-family: 'seawave';
+    src: url('../fonts/seawave.otf');
+}
+@font-face {
+    font-family: "park";
+    src: url("../fonts/Parkford.otf");
+}
+@font-face {
+    font-family: "pic";
+    src: url("../fonts/PicNic-Regular.woff");
+}
+@font-face {
+    font-family: "sig";
+    src: url("../fonts/Sligoil-Micro.otf");
+}
+@font-face {
+    font-family: "agb";
+    src: url("../fonts/AppleGaramond-Bold.ttf");
+}
+@font-face {
+    font-family: "agbi";
+    src: url("../fonts/AppleGaramond-BoldItalic.ttf");
+}
+@font-face {
+    font-family: "agr";
+    src: url("../fonts/AppleGaramond.ttf");
+}
+@font-face {
+    font-family: "agri";
+    src: url("../fonts/AppleGaramond-Italic.ttf");
+}
+@font-face {
+    font-family: "agl";
+    src: url("../fonts/AppleGaramond-Light.ttf");
+}
+@font-face {
+    font-family: "agli";
+    src: url("../fonts/AppleGaramond-LightItalic.ttf");
+}
+.agb {
+    font-family: "agb";
+}
+.agbi {
+    font-family: "agbi";
+}
+.agr{
+    font-family: "agr";
+}
+.agri {
+    font-family: "agri";
+}
+.agl {
+    font-family: "agl";
+}
+.agli {
+    font-family: "agli";
+}
 body {
-	font-family: 'sig';
+	font-family: 'agr';
     width:100%;
 	height:100vh;
 }
@@ -235,11 +296,85 @@ h5{
 } */
 	
 }
-
+.blur{
+	filter: blur(.06vw);
+}
 .content{
 /* mix-blend-mode: exclusion !important;
   will-change: mix-blend-mode; */
 	mix-blend-mode: difference !important;
     filter: invert(1) !important;
   	transform: none !important;
+}
+
+
+
+
+
+.vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 5em rgba(0,0,0,0.9) inset;
+  z-index:2;
+	 pointer-events:none;
+}
+
+.gradient{
+	position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+	/* background-image: url('../images/irid.jpg'); */
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	/* background: rgb(255,0,255);
+background: linear-gradient(90deg, rgba(255,0,255,1) 0%, rgba(255,255,0,1) 18%, rgba(0,255,255,1) 37%, rgba(0,0,255,1) 52%, rgba(255,0,0,1) 68%, rgba(255,140,0,1) 84%, rgba(0,255,0,1) 100%); */
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	opacity:22%;
+	z-index:1;
+	 pointer-events:none;
+	mix-blend-mode: difference !important;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+html:before {
+  animation: grain 8s steps(10) infinite;
+  background-image: url(https://file.notion.so/f/s/f689880b-20d1-4261-a626-d253a304112d/Grain.gif?id=f15fbebc-229c-4cb3-b03f-2e6524879ec9&table=block&spaceId=8387748c-af89-4229-ac86-e0979c66d34c&expirationTimestamp=1680892717248&signature=SGNXUcHInZfHOILccBtlBNTmGfRMZTAIK41cWlkKqu4);
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity:.05;
+  position: fixed;
+  z-index:3;
+  top: -110%;
+  width: 300%;
+  pointer-events:none;
+	
+}
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -10%) }
+  20% { transform:translate(-15%, 5%) }
+  30% { transform:translate(7%, -25%) }
+  40% { transform:translate(-5%, 25%) }
+  50% { transform:translate(-15%, 10%) }
+  60% { transform:translate(15%, 0%) }
+  70% { transform:translate(0%, 15%) }
+  80% { transform:translate(3%, 35%) }
+  90% { transform:translate(-10%, 10%) }
 }
