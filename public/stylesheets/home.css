@@ -42,6 +42,32 @@
     font-family: "agli";
     src: url("../fonts/AppleGaramond-LightItalic.ttf");
 }
+html:before {
+  animation: grain 15s steps(10) infinite;
+  background-image: url('https://file.notion.so/f/s/f689880b-20d1-4261-a626-d253a304112d/Grain.gif?id=f15fbebc-229c-4cb3-b03f-2e6524879ec9&table=block&spaceId=8387748c-af89-4229-ac86-e0979c66d34c&expirationTimestamp=1680892717248&signature=SGNXUcHInZfHOILccBtlBNTmGfRMZTAIK41cWlkKqu4');
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity:.05;
+  position: fixed;
+  /* z-index:3; */
+  top: -110%;
+  width: 300%;
+  pointer-events:none;
+}
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -10%) }
+  20% { transform:translate(-15%, 5%) }
+  30% { transform:translate(7%, -25%) }
+  40% { transform:translate(-5%, 25%) }
+  50% { transform:translate(-15%, 10%) }
+  60% { transform:translate(15%, 0%) }
+  70% { transform:translate(0%, 15%) }
+  80% { transform:translate(3%, 35%) }
+  90% { transform:translate(-10%, 10%) }
+}
+
 
 body {
 	
@@ -497,7 +523,7 @@ a.standard:disabled {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #d5b723, #d5cc23);
 	background-size: 400% 400%;
 	animation: gradient 7s ease infinite;
-	opacity:48%;
+	opacity:12%;
 	z-index:1;
 	 pointer-events:none;
 	/* mix-blend-mode: overlay !important; */
@@ -515,31 +541,6 @@ a.standard:disabled {
 	}
 }
 
-html:before {
-  animation: grain 8s steps(10) infinite;
-  background-image: url(https://file.notion.so/f/s/f689880b-20d1-4261-a626-d253a304112d/Grain.gif?id=f15fbebc-229c-4cb3-b03f-2e6524879ec9&table=block&spaceId=8387748c-af89-4229-ac86-e0979c66d34c&expirationTimestamp=1680892717248&signature=SGNXUcHInZfHOILccBtlBNTmGfRMZTAIK41cWlkKqu4);
-  content: "";
-  height: 300%;
-  left: -50%;
-  opacity:.05;
-  position: fixed;
-  z-index:3;
-  top: -110%;
-  width: 300%;
-  pointer-events:none;
-}
-@keyframes grain {
-  0%, 100% { transform:translate(0, 0) }
-  10% { transform:translate(-5%, -10%) }
-  20% { transform:translate(-15%, 5%) }
-  30% { transform:translate(7%, -25%) }
-  40% { transform:translate(-5%, 25%) }
-  50% { transform:translate(-15%, 10%) }
-  60% { transform:translate(15%, 0%) }
-  70% { transform:translate(0%, 15%) }
-  80% { transform:translate(3%, 35%) }
-  90% { transform:translate(-10%, 10%) }
-}
 
 
 .gallery {
