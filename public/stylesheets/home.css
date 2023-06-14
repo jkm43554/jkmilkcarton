@@ -6,17 +6,30 @@
     font-family: 'seawave';
     src: url('../fonts/seawave.otf');
 }
+.seaw{
+	font-family: 'seawave';
+}
 @font-face {
     font-family: "park";
     src: url("../fonts/Parkford.otf");
+}
+.park{
+	font-family:"park";
 }
 @font-face {
     font-family: "pic";
     src: url("../fonts/PicNic-Regular.woff");
 }
+
+.picn{
+	font-family:"pic";
+}
 @font-face {
     font-family: "sig";
     src: url("../fonts/Sligoil-Micro.otf");
+}
+.sig{
+	font-family:'sig';
 }
 @font-face {
     font-family: "agb";
@@ -42,66 +55,28 @@
     font-family: "agli";
     src: url("../fonts/AppleGaramond-LightItalic.ttf");
 }
-html:before {
-  animation: grain 15s steps(10) infinite;
-  background-image: url('https://file.notion.so/f/s/f689880b-20d1-4261-a626-d253a304112d/Grain.gif?id=f15fbebc-229c-4cb3-b03f-2e6524879ec9&table=block&spaceId=8387748c-af89-4229-ac86-e0979c66d34c&expirationTimestamp=1680892717248&signature=SGNXUcHInZfHOILccBtlBNTmGfRMZTAIK41cWlkKqu4');
-  content: "";
-  height: 300%;
-  left: -50%;
-  opacity:.05;
-  position: fixed;
-  /* z-index:3; */
-  top: -110%;
-  width: 300%;
-  pointer-events:none;
-}
-@keyframes grain {
-  0%, 100% { transform:translate(0, 0) }
-  10% { transform:translate(-5%, -10%) }
-  20% { transform:translate(-15%, 5%) }
-  30% { transform:translate(7%, -25%) }
-  40% { transform:translate(-5%, 25%) }
-  50% { transform:translate(-15%, 10%) }
-  60% { transform:translate(15%, 0%) }
-  70% { transform:translate(0%, 15%) }
-  80% { transform:translate(3%, 35%) }
-  90% { transform:translate(-10%, 10%) }
-}
 
 
 body {
-	
 	font-family: 'agr';
-
     width:100%;
 	height:100vh;
-
-	 overflow: hidden;
-      
-        /* background: rgb(245,245,245); */
+	overflow: hidden;
+    /* background: rgb(245,245,245); */
 	background:white;
-        color:#000718;
-        text-align: center;
+    color:#17181a;
+    text-align: center;
 	padding-bottom: env(safe-area-inset-bottom);
 	font-size:1em;
-	
-	
 	height: 100%;
 	overflow-y: scroll; 
 	-webkit-overflow-scrolling: touch;
 }
-
-
 .maincontent{
 	overflow:scroll;
-	height:90vh;
+	margin-top:1em;
 }
 .navvy{
-	/* display:flex; */
-    /* background: transparent; */
-	/* height:60px; */
-    /* flex-direction: row;
-	justify-content:space-between; */
     border: 3px solid #000718;
 	border-bottom: 15px solid #000718;
     border-top-left-radius:10px;
@@ -111,19 +86,8 @@ body {
 }
 
 .navbar-brand {
-	/* font-family:'Helvetica','Ariel','sans-serif'; */
-	/* display:inline-block; */
-    /* display:flex; */
-    /* flex-direction:column; */
-	/* font-family:'park'; */
-	/* font-weight: 100; */
- 
-	/* font-family: 'pic'; */
-	/* font-size:25px; */
-	/* font-weight: bolder; */
 	text-decoration:none;
 	color:#000718;
-	/* transform: scale(0.5, 1); */
 }
 .nav-item a{
  color:#000718;
@@ -178,7 +142,8 @@ button:focus {
 }
 
 .rowed{
-	height:70vh;
+	/* height:7em; */
+	margin-top:3em;
 }
 .rowed2{
 	/* height:10vh; */
@@ -191,7 +156,8 @@ button:focus {
 
 	.maincontent{
 		overflow:scroll;
-		height:90vh;
+		/* height:90vh; */
+		margin-top:1em;
 	}
 }
 
@@ -199,8 +165,8 @@ button:focus {
 
 @media (max-width:576px){
 	.rowed{
-		margin-top:10vh;
-		height:40vh;
+		/* margin-top:10vh;
+		height:40vh; */
 	}
 	.rowed2{
 		height:10vh;
@@ -213,8 +179,8 @@ button:focus {
 
 @media (max-width:511px){
 	.rowed{
-		margin-top:10vh;
-		margin-bottom: 50px;
+		/* margin-top:10vh; */
+		/* margin-bottom: 50px; */
 		height:auto;
 	}
 	.jah{
@@ -378,7 +344,9 @@ a.brand_guide{
 	color:#000718;
 }
 
-
+a.mmco{
+	color:#000718;
+}
 .uppercase{
 	text-transform: uppercase;
 }
@@ -409,16 +377,16 @@ a.brand_guide{
 	font-size:50%;
 }
 
-.4th{
+.fourth{
 	font-size:.25em;
 }
-.6th{
+.sixth{
 	font-size:.17em;
 }
-.8th{
+.eigth{
 	font-size: .125em;
 }
-.10th{
+.tenth{
 	font-size:.1em;
 }
 
@@ -442,16 +410,16 @@ a.brand_guide{
 	font-size:.5vw;
 }
 
-.4thr{
+.fourthr{
 	font-size:.25vw;
 }
-.6thr{
+.sixthr{
 	font-size:.17vw;
 }
-.8thr{
+.eigthr{
 	font-size: .125vw;
 }
-.10thr{
+.tenthr{
 	font-size:.1vw;
 }
 
@@ -475,12 +443,12 @@ a.darkref{
   	transform: none !important;
 }
 
-.blur{
+/* .blur{
 	filter: blur(.06vw);
 }
 .blurmore{
 	filter:blur(.1vw)
-}
+} */
 
 .tabcap{
 	display:table-caption;
@@ -510,35 +478,6 @@ a.standard:disabled {
   box-shadow: 0 0 5em rgba(0,0,0,0.9) inset;
   z-index:2;
 	 pointer-events:none;
-}
-
-.gradient{
-	position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-	/* background-image: url('../images/irid.jpg'); */
-	background: rgb(255,0,255);
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #d5b723, #d5cc23);
-	background-size: 400% 400%;
-	animation: gradient 7s ease infinite;
-	opacity:12%;
-	z-index:1;
-	 pointer-events:none;
-	/* mix-blend-mode: overlay !important; */
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }
 
 
@@ -606,3 +545,4 @@ a.standard:disabled {
 }
 
 
+/* .tab { text-indent:1% } */
