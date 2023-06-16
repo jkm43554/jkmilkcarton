@@ -280,7 +280,7 @@ h5{
 .mephoto{
 	position:fixed;
 	z-index:-20;
-	margin-top:50px; 
+	margin-top:200px; 
 	
 	
 }
@@ -330,3 +330,115 @@ h5{
 
 
 
+.maincontent{
+	overflow:scroll;
+	margin-top:1em;
+}
+
+
+.rowed{
+	margin-top: 1em;
+}
+
+
+@media (max-width:768px){
+	.titles{
+		font-size:50%;
+	}
+
+	.maincontent{
+		overflow:scroll;
+		/* margin-top:1em; */
+	}
+}
+
+
+
+@media (max-width:576px){
+	
+	.rowed2{
+		height:10vh;
+	}
+	.jah{
+		max-width:100%;
+		height:auto;
+	}
+}
+
+@media (max-width:511px){
+	.rowed{
+		height:auto;
+	}
+	.jah{
+		max-width:100%;
+		height:auto;
+	}
+	
+}
+
+
+.x2{
+	font-size:2em;
+}
+.x4{
+	font-size:4em;
+}
+.x6{
+	font-size:6em;
+}
+.x8{
+	font-size:8em;
+}
+.x10{
+	font-size:10em;
+}
+
+.half{
+	font-size:50%;
+}
+
+.fourth{
+	font-size:.25em;
+}
+.sixth{
+	font-size:.17em;
+}
+.eigth{
+	font-size: .125em;
+}
+.tenth{
+	font-size:.1em;
+}
+
+.x2r{
+	font-size:2vw;
+}
+.x4r{
+	font-size:4vw;
+}
+.x6r{
+	font-size:6vw;
+}
+.x8r{
+	font-size:8vw;
+}
+.x10r{
+	font-size:10vw;
+}
+
+.halfr{
+	font-size:.5vw;
+}
+
+.fourthr{
+	font-size:.25vw;
+}
+.sixthr{
+	font-size:.17vw;
+}
+.eigthr{
+	font-size: .125vw;
+}
+.tenthr{
+	font-size:.1vw;
+}
