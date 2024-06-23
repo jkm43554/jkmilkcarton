@@ -219,12 +219,13 @@ ul {
   margin: 0; /* Remove margins */
 }
 
-ul.servicesskills{
-	font-size:32px;
-}
+
 li{
 	font-size:14px;
 	line-height:1.5em;
+}
+ul.servicesskills{
+	font-size:32px;
 }
 
 h5{
